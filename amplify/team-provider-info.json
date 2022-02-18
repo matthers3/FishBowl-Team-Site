@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fishbowlteamsite-dev-132314-authRole",
+      "UnauthRoleArn": "arn:aws:iam::069530880685:role/amplify-fishbowlteamsite-dev-132314-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::069530880685:role/amplify-fishbowlteamsite-dev-132314-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-fishbowlteamsite-dev-132314-deployment",
+      "UnauthRoleName": "amplify-fishbowlteamsite-dev-132314-unauthRole",
+      "StackName": "amplify-fishbowlteamsite-dev-132314",
+      "StackId": "arn:aws:cloudformation:us-west-1:069530880685:stack/amplify-fishbowlteamsite-dev-132314/1602bf90-90d7-11ec-a6c2-06b203b240a1",
+      "AmplifyAppId": "dg3eicp6pdy2l"
+    }
+  }
+}
