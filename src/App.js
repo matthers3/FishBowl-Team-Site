@@ -1,14 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
+import LogoContainer from './components/Logo Container/LogoContainer';
+import ContactButton from './components/ContactButton/ContactButton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-Container">
         <Header/>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+        <LogoContainer></LogoContainer>
+        <ContactButton></ContactButton>
+      </div>
     </div>
   );
 }

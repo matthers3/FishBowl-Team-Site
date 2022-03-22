@@ -1,50 +1,28 @@
-import { AppBar, Toolbar, Button, } from "@material-ui/core";
-// import { Link as RouterLink } from "react-router-dom";
 import React from "react";
-
+import './Header.scss';
 
 const headersData = [
-    {
-        label: 'Games',
-        href: '/games'
-    },
-    {
-        label: 'About Us',
-        href: '/about',
-    },
-    {
-        label: 'Contact',
-        href: '/contact',
-    },
+    { label: 'Home' },
+    { label: 'Projects'},
+    { label: 'About' },
+    { label: 'Contact' },
 ];
 
 export default function Header() {
-  const displayDesktop = () => {
-    return <Toolbar>FishBowl Teamv
-        {getMenuButtons()}
-    </Toolbar>;
+  
+  const getMenuButtons = () => {
+    return headersData.map(({ label }) => {
+      return (<div>{label}</div>);
+    });
   };
 
-  const getMenuButtons = () => {
-    return headersData.map(({ label, href }) => {
-        console.log(label, href);
-      return (
-        <Button
-          {...{
-            key: label,
-            color: "inherit",
-            to: href,
-          }}
-        >
-          {label}
-        </Button>
-      );
-    });
+  const displayDesktop = () => {
+    return <> {getMenuButtons()} </>;
   };
   
   return (
-    <header>
-      <AppBar>{displayDesktop()}</AppBar>
-    </header>
+    <div className="nav-bar">
+      {displayDesktop()}
+    </div>
   );
 }
