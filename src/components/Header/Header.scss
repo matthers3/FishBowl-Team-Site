@@ -1,7 +1,28 @@
 
 .nav-bar {
+    position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     background-color: white;
+    padding: 3vh 0;
+}
+
+.nav-bar-options {
+    display: flex;
+    font-weight: bold;
+    width: 25vw;
+    justify-content: space-between;
+    margin-right: 10vw;
+    font-size: 1.25vw;
+}
+
+.option-selected {
+    color: #FF622B !important;
+}
+
+.option {
+    color: #000000;
+    cursor: pointer;
 }

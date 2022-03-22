@@ -9,15 +9,18 @@ const headersData = [
 ];
 
 export default function Header() {
-  
-  const getMenuButtons = () => {
-    return headersData.map(({ label }) => {
-      return (<div>{label}</div>);
-    });
-  };
 
   const displayDesktop = () => {
-    return <> {getMenuButtons()} </>;
+    return (
+      <div className="nav-bar-options">
+        <div className="option option-selected">{headersData[0].label.toUpperCase()}</div>
+        <div><img src="nav_bar_separator.svg" /></div>
+        <div className="option">{headersData[1].label.toUpperCase()}</div>
+        <div><img src="nav_bar_separator.svg" /></div>
+        <div className="option">{headersData[2].label.toUpperCase()}</div>
+        <div><img src="nav_bar_separator.svg" /></div>
+        <div className="option">{headersData[3].label.toUpperCase()}</div>
+      </div>);
   };
   
   return (
