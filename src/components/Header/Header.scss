@@ -6,13 +6,14 @@
     display: flex;
     justify-content: flex-end;
     background-color: white;
-    padding: 3vh 0;
+    height: 8vh;
+    align-items: center;
 }
 
 .nav-bar-options {
     display: flex;
     font-weight: bold;
-    width: 25vw;
+    width: 27vw;
     justify-content: space-between;
     margin-right: 10vw;
     font-size: 1.25vw;
