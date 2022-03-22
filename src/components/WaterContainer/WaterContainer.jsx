@@ -1,6 +1,6 @@
 import React from "react";
 import "./WaterContainer.scss";
-import LogoContainer from '../Logo Container/LogoContainer';
+import TeamMembers from "../TeamMembers/TeamMembers";
 
 export default function WaterContainer() {
 
@@ -10,6 +10,7 @@ export default function WaterContainer() {
             <img src={'wave_tops.svg'}/>
         </div>
         <div className="under-water">
+          <TeamMembers></TeamMembers>
         </div>
       </div>
     );
