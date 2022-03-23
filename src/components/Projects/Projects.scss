@@ -1,0 +1,66 @@
+
+.desktop-projects {
+    margin-top: 12vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-title {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+    font-size: 4vw;
+}
+
+.project-close {
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+
+    .soon-text {
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: 'Prompt', sans-serif;
+    }
+
+    .pun-text {
+        font-size: 1vw;
+        font-weight: bold;
+        font-style: italic;
+        color: #64B9FF;
+        font-family: 'Prompt', sans-serif;
+    }
+}
+
+.orange-text {
+    color: #FF622B;
+}
+
+.right-text {
+    margin-left: 0.25em;
+}
+
+.image-swiper {
+    max-width: 100vw;
+    margin-top: 5vh;
+}
+
+.image-cut {
+    max-height: 60vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}

@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import LogoContainer from './components/Logo Container/LogoContainer';
 import ContactButton from './components/ContactButton/ContactButton';
 import WaterContainer from './components/WaterContainer/WaterContainer';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Header/>
         <LogoContainer></LogoContainer>
         <ContactButton></ContactButton>
+        <Projects></Projects>
         <WaterContainer></WaterContainer>
       </div>
     </div>
