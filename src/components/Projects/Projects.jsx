@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <div>
             <BrowserView className="desktop-projects">
-                <div className="project-title">
+                <div className="project-title text-big">
                     <div className="orange-text">Alma</div>
                     <div className="right-text"> is NOW in development !</div>
                 </div>

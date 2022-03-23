@@ -14,3 +14,9 @@
 a {
   text-decoration: none;
 }
+
+.text-big {
+  font-size: 4.5vw;
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;
+}
