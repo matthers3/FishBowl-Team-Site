@@ -33,27 +33,27 @@ export default function Projects() {
                         scrollbar={{ draggable: true }}
                         >
                         <SwiperSlide>
-                            <div class="image-cut">
+                            <div className="image-cut">
                                 <img src="swiper1.JPG"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="image-cut">
+                            <div className="image-cut">
                                 <img src="swiper2.JPG"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="image-cut">
+                            <div className="image-cut">
                                 <img src="swiper3.JPG"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="image-cut">
+                            <div className="image-cut">
                                 <img src="swiper4.JPG"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div class="image-cut">
+                            <div className="image-cut">
                                 <img src="swiper5.JPG"/>
                             </div>
                         </SwiperSlide>
