@@ -19,7 +19,16 @@ export default function TeamMembers() {
           We like meaningful stories and we’d like to make stories that are meaningful<br/>to you too. 
           </div>
         </div>
-        <img src={'fish-resume.svg'} className="member"/>
+        <div className="the-team">
+          <div className="row">
+            <img src={'Fishfacingright_01.svg'} className="member"/>
+            <img src={'Fishfacingright_01.svg'} className="member member-low"/>
+          </div>
+          <div className="row">
+            <img src={'Fishfacingleft_01.svg'} className="member"/>
+            <img src={'Fishfacingleft_01.svg'} className="member member-low"/>
+          </div>
+        </div>
       </div>
     );
   }
