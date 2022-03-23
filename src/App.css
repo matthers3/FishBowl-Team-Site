@@ -6,6 +6,7 @@
 
 .App-Container {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -23,4 +24,5 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

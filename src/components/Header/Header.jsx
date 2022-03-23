@@ -40,12 +40,16 @@ export default function Header() {
   };
   
   return (
-    <div className="nav-bar">
+    <div className="full-width">
       <BrowserView>
-        {displayDesktop()}
+        <div className="nav-bar">
+          {displayDesktop()}
+        </div>
       </BrowserView>
       <MobileView>
-        {displayMobile()}
+        <div className="mobile-nav-bar">
+          {displayMobile()}
+        </div>
       </MobileView>
     </div>
   );
