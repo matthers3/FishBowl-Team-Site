@@ -1,6 +1,7 @@
 import React from "react";
 import "./WaterContainer.scss";
 import TeamMembers from "../TeamMembers/TeamMembers";
+import Footer from "../Footer/Footer";
 
 export default function WaterContainer() {
 
@@ -11,6 +12,7 @@ export default function WaterContainer() {
         </div>
         <div className="under-water">
           <TeamMembers></TeamMembers>
+          <Footer></Footer>
         </div>
       </div>
     );
