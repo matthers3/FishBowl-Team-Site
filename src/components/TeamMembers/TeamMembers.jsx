@@ -6,24 +6,28 @@ export default function TeamMembers() {
 
     const members = [
       {
-        name: '',
-        role: '',
-        description: ''
+        name: 'Cat C. Molina',
+        role: 'Designer.',
+        description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
+        que quieras en dos o tres lineas idk que mas decir sobre esto.`
       },
       {
-        name: '',
-        role: '',
-        description: ''
+        name: 'Matías Gabler',
+        role: 'Programmer',
+        description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
+        que quieras en dos o tres lineas idk que mas decir sobre esto.`
       },
       {
-        name: '',
-        role: '',
-        description: ''
+        name: 'Fran "Pan" Pezoa',
+        role: 'Designer & Programmer',
+        description: `Making games since preteen years, always thinking how to 
+          make things more fun. Favourite game: Mother 3.`
       },
       {
-        name: '',
-        role: '',
-        description: ''
+        name: 'Abril Araneda',
+        role: 'Designer',
+        description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
+        que quieras en dos o tres lineas idk que mas decir sobre esto.`
       },
     ]
 
@@ -85,7 +89,27 @@ export default function TeamMembers() {
             </div>
           </div>
           <div className="the-team-mobile">
-
+            {members.map((member => {
+              return (
+                <div className="team-member-mobile">
+                  <div className="member-image">
+                    <img src="alma.svg"/>
+                  </div>
+                  <div className="member-name">
+                    {member.name}
+                  </div>
+                  <div className="member-role">
+                    {member.role}
+                  </div>
+                  <div className="member-description">
+                    {member.description}
+                  </div>
+                  <div class="more-info">
+                    <div>More me!</div>
+                  </div>
+                </div>
+              );
+            }))}
           </div>
         </div>
       );
