@@ -9,19 +9,23 @@ export default function ContactButton() {
       // Desktop.
       return (
         <div className="contact-button-container">
-          <div className="contact-button">
-            <img src={'mail.svg'} className="mail-icon"/>
-            <div className="text">LET'S TALK!</div>
-          </div>
+          <a href="mailto:fishbowlcity.team@gmail.com" target="_blank">
+            <div className="contact-button">
+              <img src={'mail.svg'} className="mail-icon"/>
+              <div className="text">LET'S TALK!</div>
+            </div>
+          </a>
         </div>
       );
     } else {
       // Mobile.
       return (
         <div className="contact-button-container">
-          <div className="contact-button-mobile">
-            <div className="text">LET'S TALK!</div>
-          </div>
+          <a href="mailto:fishbowlcity.team@gmail.com" target="_blank">
+            <div className="contact-button-mobile">
+              <div className="text">LET'S TALK!</div>
+            </div>
+          </a>
         </div>
       );
     }
