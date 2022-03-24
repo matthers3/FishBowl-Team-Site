@@ -11,22 +11,22 @@ export default function Footer() {
       ref: "mailto:fishbowlcity.team@gmail.com"
     },
     {
-      icon: "twitter.svg",
+      icon: "i_twitter.svg",
       text: "@team_fishbowl",
       ref: "https://twitter.com/team_fishbowl"
     },
     {
-      icon: "tumblr.svg",
+      icon: "i_tumblr.svg",
       text: "@fishbowl_team",
       ref: ""
     },
     {
-      icon: "linkedin.svg",
+      icon: "i_linkedin.svg",
       text: "Fishbowl Team",
       ref: "https://www.linkedin.com/company/fishbowl-team/"
     },
     {
-      icon: "instagram.svg",
+      icon: "i_instagram.svg",
       text: "@FishbowlTeam",
       ref: ""
     },
@@ -49,9 +49,9 @@ export default function Footer() {
             return (
               <a href={media.ref} target="_blank">
                 <div className="social-media-button">
-                  {/* <div className="icon">
+                  <div className="icon">
                     <img src={media.icon} />
-                  </div> */}
+                  </div>
                   <div className="text">
                     {media.text}
                   </div>

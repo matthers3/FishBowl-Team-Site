@@ -40,13 +40,19 @@
             color: white;
             border-radius: 10vw;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             cursor: pointer;
             margin-top: 3vh;
         
             .icon {
-                width: auto;
-                height: 100%;
+                max-width: 6vw;
+                height: 6vw;
+
+                img {
+                    object-fit: fill;
+                    height: 100%;
+                    width: 100%;
+                }
             }
         
             .text {
