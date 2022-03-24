@@ -3,10 +3,43 @@
     color: white;
 }
 
+.team-title-mobile {
+    margin-top: 2vh;
+    color: white;
+    font-size: 6vw;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-members-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -0.5vh;
+}
+
+.about-text-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .about-text {
     font-family: 'Prompt', sans-serif;
     font-size: 1vw;
     line-height: 2em;
+    width: 42vw;
+}
+
+.about-text-mobile {
+    font-family: 'Prompt', sans-serif;
+    font-size: 3vw;
+    line-height: 2em;
+    width: 90vw;
 }
 
 .p1 {
