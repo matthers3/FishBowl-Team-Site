@@ -8,26 +8,30 @@ export default function TeamMembers() {
       {
         name: 'Cat C. Molina',
         role: 'Designer.',
-        description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
-        que quieras en dos o tres lineas idk que mas decir sobre esto.`
+        description: `Lover of all things media. Illustrator, animator, and aspiring writter.
+              Favorite game: Psychonauts (2005).`,
+        img: 'Team_Cat_x4_circle.png'
       },
       {
         name: 'Matías Gabler',
         role: 'Programmer',
         description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
-        que quieras en dos o tres lineas idk que mas decir sobre esto.`
+        que quieras en dos o tres lineas idk que mas decir sobre esto.`,
+        img: 'Team_Matias_x4_circle.png'
       },
       {
         name: 'Fran "Pan" Pezoa',
         role: 'Designer & Programmer',
         description: `Making games since preteen years, always thinking how to 
-          make things more fun. Favourite game: Mother 3.`
+          make things more fun. Favourite game: Mother 3.`,
+          img: 'Team_Pan_x4_circle.png'
       },
       {
         name: 'Abril Araneda',
         role: 'Designer',
         description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
-        que quieras en dos o tres lineas idk que mas decir sobre esto.`
+        que quieras en dos o tres lineas idk que mas decir sobre esto.`,
+        img: 'Team_Abril_x4_circle.png'
       },
     ]
 
@@ -40,6 +44,63 @@ export default function TeamMembers() {
           have something to say.`,
       p2: `We like meaningful stories and we’d like to make stories that are 
           meaningful to you too.`,
+    }
+
+    const createMember = (index, direction) => {
+      if (direction == 'right')
+      {
+        return (
+          <div className="team-member-container"
+          style={{background: `url(./Fishfacingright_01.svg) no-repeat`}}>
+          <div className="filler"></div>
+          <div className="member member-right">
+            <div className="member-info">
+              <div className="member-name">
+                  {members[index].name}
+                </div>
+                <div className="member-role">
+                  {members[index].role}
+                </div>
+                <div className="member-description">
+                  {members[index].description}
+                </div>
+                <div class="more-info more-info-left">
+                  <div>More me!</div>
+                </div>
+            </div>
+            <div className="member-image">
+              <img src={members[index].img} />
+            </div>
+          </div>
+        </div>
+        );
+      } else {
+        return (
+          <div className="team-member-container"
+            style={{background: `url(./Fishfacingleft_01.svg) no-repeat`}}>
+            <div className="member member-left">
+              <div className="member-image">
+                <img src={members[index].img} />
+              </div>
+              <div className="member-info">
+                <div className="member-name">
+                    {members[index].name}
+                  </div>
+                  <div className="member-role">
+                    {members[index].role}
+                  </div>
+                  <div className="member-description">
+                    {members[index].description}
+                  </div>
+                  <div class="more-info more-info-left">
+                    <div>More me!</div>
+                  </div>
+              </div>
+            </div>
+            <div className="filler"></div>
+          </div>
+        );
+      }
     }
 
     if (isDesktop)
@@ -60,13 +121,13 @@ export default function TeamMembers() {
             </div>
           </div>
           <div className="the-team">
-            <div className="row">
-              <img src={'Fishfacingright_01.svg'} className="member"/>
-              <img src={'Fishfacingright_01.svg'} className="member member-low"/>
+            <div className="col">
+              {createMember(0, 'right')}
+              {createMember(2, 'right')}
             </div>
-            <div className="row">
-              <img src={'Fishfacingleft_01.svg'} className="member"/>
-              <img src={'Fishfacingleft_01.svg'} className="member member-low"/>
+            <div className="col">
+              {createMember(1, 'left')}
+              {createMember(3, 'left')}
             </div>
           </div>
         </div>
@@ -93,7 +154,7 @@ export default function TeamMembers() {
               return (
                 <div className="team-member-mobile">
                   <div className="member-image">
-                    <img src="alma.svg"/>
+                    <img src={member.img}/>
                   </div>
                   <div className="member-name">
                     {member.name}
