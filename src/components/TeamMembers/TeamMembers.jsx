@@ -23,7 +23,7 @@ export default function TeamMembers() {
         name: 'Fran "Pan" Pezoa',
         role: 'Designer & Programmer',
         description: `Making games since preteen years, always thinking how to 
-          make things more fun. Favourite game: Mother 3.`,
+          make things more fun. Favorite game: Mother 3 (2006).`,
           img: 'Team_Pan_x4_circle.png'
       },
       {
