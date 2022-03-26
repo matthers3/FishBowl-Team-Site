@@ -15,8 +15,8 @@ export default function TeamMembers() {
       {
         name: 'Matías Gabler',
         role: 'Programmer',
-        description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
-        que quieras en dos o tres lineas idk que mas decir sobre esto.`,
+        description: `Passionate about data and software, always looking for new challenges. 
+          Favorite game: Castlevania: Order of Ecclesia (2008).`,
         img: 'Team_Matias_x4_circle.png'
       },
       {
