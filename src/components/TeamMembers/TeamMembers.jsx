@@ -28,9 +28,9 @@ export default function TeamMembers() {
       },
       {
         name: 'Abril Araneda',
-        role: 'Designer',
-        description: `Lorem ipsum sobre ti y la wea equisde aqui pones lo 
-        que quieras en dos o tres lineas idk que mas decir sobre esto.`,
+        role: 'Designer.',
+        description: `Illustrator and animator. In love with experimental animation.
+        Favorite game: Legend of the phoenix. (2020).`,
         img: 'Team_Abril_x4_circle.png'
       },
     ]
