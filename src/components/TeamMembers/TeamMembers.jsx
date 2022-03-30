@@ -30,7 +30,7 @@ export default function TeamMembers() {
         name: 'Abril Araneda',
         role: 'Designer.',
         description: `Illustrator and animator. In love with experimental animation.
-        Favorite game: Legend of the phoenix. (2020).`,
+        Favorite game: Legend of the phoenix (2020).`,
         img: 'Team_Abril_x4_circle.png'
       },
     ]
