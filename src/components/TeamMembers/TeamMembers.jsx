@@ -65,7 +65,7 @@ export default function TeamMembers() {
                   {members[index].description}
                 </div>
                 <div className="more-info more-info-left">
-                  <div>More me!</div>
+                  {/* <div>More me!</div> */}
                 </div>
             </div>
             <div className="member-image">
@@ -93,7 +93,7 @@ export default function TeamMembers() {
                     {members[index].description}
                   </div>
                   <div className="more-info more-info-left">
-                    <div>More me!</div>
+                    {/* <div>More me!</div> */}
                   </div>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function TeamMembers() {
                     {member.description}
                   </div>
                   <div className="more-info">
-                    <div>More me!</div>
+                    {/* <div>More me!</div> */}
                   </div>
                 </div>
               );
