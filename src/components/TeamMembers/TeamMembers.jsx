@@ -64,7 +64,7 @@ export default function TeamMembers() {
                 <div className="member-description">
                   {members[index].description}
                 </div>
-                <div class="more-info more-info-left">
+                <div className="more-info more-info-left">
                   <div>More me!</div>
                 </div>
             </div>
@@ -92,7 +92,7 @@ export default function TeamMembers() {
                   <div className="member-description">
                     {members[index].description}
                   </div>
-                  <div class="more-info more-info-left">
+                  <div className="more-info more-info-left">
                     <div>More me!</div>
                   </div>
               </div>
@@ -106,7 +106,7 @@ export default function TeamMembers() {
     if (isDesktop)
     {
       return (
-        <div className="team-members">
+        <div className="team-members" id="about">
           <div className="team-title text-big">
             {meetTheTeam.title}
           </div>
@@ -135,7 +135,7 @@ export default function TeamMembers() {
     } else {
       // Mobile.
       return (
-        <div className="team-members-mobile">
+        <div className="team-members-mobile" id="about">
           <div className="team-title-mobile text-big">
             {meetTheTeam.title}
           </div>
@@ -165,7 +165,7 @@ export default function TeamMembers() {
                   <div className="member-description">
                     {member.description}
                   </div>
-                  <div class="more-info">
+                  <div className="more-info">
                     <div>More me!</div>
                   </div>
                 </div>

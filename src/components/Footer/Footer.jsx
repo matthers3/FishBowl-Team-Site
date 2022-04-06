@@ -40,12 +40,12 @@ export default function Footer() {
   {
     // Desktop.
     return (
-        <div className="footer">
+        <div className="footer" id="contact">
           <div className="social-media-container">
             {socialMedia.map((media) => {
               return (
                 <a href={media.ref} target="_blank">
-                  <div class="social-media-button">
+                  <div className="social-media-button">
                     <img src={media.desktop_icon} />
                   </div>
                 </a>
@@ -57,7 +57,7 @@ export default function Footer() {
   } else {
     // Mobile.
     return (
-      <div className="footer-mobile"
+      <div className="footer-mobile" id="contact"
         style={{background: `url(tenticles_mobile.svg) bottom center no-repeat`}}>
         <div className="social-media-container">
           {socialMedia.map((media) => {

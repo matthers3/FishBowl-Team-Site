@@ -13,7 +13,7 @@ import "./Projects.scss";
 export default function Projects() {
     if (isDesktop) {
         return (
-            <div className="desktop-projects">
+            <div className="desktop-projects" id="projects">
                 <div className="project-title text-big">
                     <div className="orange-text">Alma</div>
                     <div className="right-text"> is NOW in development !</div>
@@ -67,7 +67,7 @@ export default function Projects() {
         );
     } else {
         return (
-            <div className="mobile-projects">
+            <div className="mobile-projects" id="projects">
                 <div className="project-title mobile-text-big">
                     <div className="orange-text">Alma</div>
                     <div className="right-text"> is NOW in development !</div>
