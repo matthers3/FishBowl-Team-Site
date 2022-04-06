@@ -7,26 +7,31 @@ export default function Footer() {
   const socialMedia = [
     {
       icon: "contact_mail.svg",
+      desktop_icon: "contact_button_desktop.svg",
       text: "GET IN TOUCH!",
       ref: "mailto:fishbowlcity.team@gmail.com"
     },
     {
       icon: "i_twitter.svg",
+      desktop_icon: "i_twitter_desktop.svg",
       text: "@team_fishbowl",
       ref: "https://twitter.com/team_fishbowl"
     },
     {
       icon: "i_tumblr.svg",
+      desktop_icon: "i_tumblr_desktop.svg",
       text: "@fishbowl_team",
       ref: ""
     },
     {
       icon: "i_linkedin.svg",
+      desktop_icon: "i_linkedin_desktop.svg",
       text: "Fishbowl Team",
       ref: "https://www.linkedin.com/company/fishbowl-team/"
     },
     {
       icon: "i_instagram.svg",
+      desktop_icon: "i_instagram_desktop.svg",
       text: "@FishbowlTeam",
       ref: ""
     },
@@ -36,7 +41,17 @@ export default function Footer() {
     // Desktop.
     return (
         <div className="footer">
-          <img src="tenticles.svg" />
+          <div className="social-media-container">
+            {socialMedia.map((media) => {
+              return (
+                <a href={media.ref} target="_blank">
+                  <div class="social-media-button">
+                    <img src={media.desktop_icon} />
+                  </div>
+                </a>
+              );
+            })}
+          </div>
         </div>
     )
   } else {
