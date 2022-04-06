@@ -19,12 +19,10 @@ export default function ContactButton() {
     } else {
       // Mobile.
       return (
-        <div className="contact-button-container">
-          <a href="mailto:fishbowlcity.team@gmail.com" target="_blank">
+        <div className="contact-button-container" onClick={() => scrollTo({ id: "contact", duration: 50 })}>
             <div className="contact-button-mobile">
               <div className="text">LET'S TALK!</div>
             </div>
-          </a>
         </div>
       );
     }
