@@ -1,5 +1,6 @@
 import React from "react";
 import { isDesktop } from 'react-device-detect';
+import ContactButton from '../ContactButton/ContactButton';
 import "./LogoContainer.scss";
 
 
@@ -10,6 +11,7 @@ export default function LogoContainer() {
       return (
         <div className="logo-container" id="home">
           <img src={'Logo_Fishbowl_SVG.svg'} className="logo"/>
+          <ContactButton></ContactButton>
         </div>
       )
     } else {
@@ -18,6 +20,7 @@ export default function LogoContainer() {
         // Mobile.
         <div className="logo-container-mobile" id="home">
           <img src={'Logo_Fishbowl_SVG.svg'} className="logo"/>
+          <ContactButton></ContactButton>
         </div>
       );
     }
