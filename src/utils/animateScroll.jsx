@@ -20,7 +20,7 @@ export function animateScroll({ targetPosition, initialPosition, duration }) {
    document.documentElement.scrollHeight -
    document.documentElement.clientHeight;
 
- const globalMargin = 85;
+ const globalMargin = 80;
 
  const amountOfPixelsToScroll = initialPosition - targetPosition + globalMargin;
 

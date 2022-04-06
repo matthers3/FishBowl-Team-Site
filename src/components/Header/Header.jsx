@@ -29,8 +29,8 @@ export default function Header(props) {
     try {
       const elementY = document.getElementById(id).offsetTop;
       const elementHeight = getAbsoluteHeight(document.getElementById(id));
-      const topMargin = -40 * (window.innerHeight / 1080);
-      const bottomMargin = 40;
+      const topMargin = -85;
+      const bottomMargin = 0;
       if (position > elementY + topMargin && 
           position < elementY + elementHeight + bottomMargin) {
         return "option-selected";
