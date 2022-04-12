@@ -46,7 +46,7 @@ export default function TeamMembers() {
           meaningful to you too.`,
     }
 
-    const createMember = (index, direction) => {
+    const createMember =  (index, direction) => {
       if (direction == 'right')
       {
         return (
