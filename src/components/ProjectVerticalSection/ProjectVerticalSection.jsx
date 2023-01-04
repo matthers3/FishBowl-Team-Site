@@ -6,7 +6,7 @@ import "./ProjectVerticalSection.scss";
 export default function ProjectVerticalSection(props) {
     const data = props.props;
   
-    if (isDesktop) {
+    if (true) {
       //Desktop.
       return (
         <div className="project-vertical-section" id="home">

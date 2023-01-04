@@ -5,7 +5,7 @@ import "./ProjectAbout.scss";
 
 export default function ProjectAbout() {
 
-    if (isDesktop) {
+    if (true) {
       //Desktop.
       return (
         <div className="project-about" id="home">

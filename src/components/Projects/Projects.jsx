@@ -116,7 +116,6 @@ export default function Projects() {
                 </div>
                 <div className="project-close">
                     <div className="soon-text">Coming soon !</div>
-                    <div className="pun-text">(you know, like a liar)</div>
                 </div>
             </div>
         );

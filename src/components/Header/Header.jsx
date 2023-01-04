@@ -69,11 +69,9 @@ export default function Header(props) {
   const displayMobile = () => {
     return (
         <div className="mobile-nav-bar-options">
-          <div onClick={() => scrollTo({ id: "home", duration: 50 })} 
-            className={`option`}>{headersData[0].label.toUpperCase()}</div>
+          <a className={" mobile-option"} href={`/`}><div className={`option`}>{headersData[0].label.toUpperCase()}</div></a>
           <div><img src="nav_bar_separator.svg" /></div>
-          <div onClick={() => scrollTo({ id: "projects", duration: 50 })}
-            className={`option`}>{headersData[1].label.toUpperCase()}</div>
+          <a className={" mobile-option"} href={`/Alma`}><div className={`option`}>{headersData[1].label.toUpperCase()}</div></a>
           {/* <div><img src="nav_bar_separator.svg" /></div>
           <div onClick={() => scrollTo({ id: "about", duration: 50 })}
             className={`option`}>{headersData[2].label.toUpperCase()}</div> */}

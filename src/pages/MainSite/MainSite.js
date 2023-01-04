@@ -10,7 +10,6 @@ function MainSite() {
     <div className="App">
       <div className="App-Container">
         <LogoContainer></LogoContainer>
-        <Projects></Projects>
         <WaterContainer></WaterContainer>
       </div>
     </div>

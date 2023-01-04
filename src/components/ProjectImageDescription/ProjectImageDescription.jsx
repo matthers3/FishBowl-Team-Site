@@ -5,7 +5,7 @@ import "./ProjectImageDescription.scss";
 
 export default function ProjectImageDescription() {
 
-    if (isDesktop) {
+    if (true) {
       //Desktop.
       return (
         <div className="project-image-description" id="home">

@@ -5,7 +5,7 @@ import "./AlmaBanner.scss";
 
 export default function AlmaBanner() {
 
-    if (isDesktop) {
+    if (true) {
       //Desktop.
       return (
         <div className="alma-banner" id="home">

@@ -11,20 +11,26 @@ import 'swiper/css/autoplay';
 export default function CharacterSlider() {
 
     const characters = [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
+        {file: "./WEB-fishboy.png"},
+        {file: "./WEB-robin.png"},
+        {file: "./WEB-gus.png"},
+        {file: "./WEB-romeo.png"},
+        {file: "./WEB-valentina.png"},
+        {file: "./WEB-vet.png"},
+        {file: "./WEB-botanica.png"},
+        {file: "./WEB-sr_toledo.png"},
+        {file: "./WEB-Alma.png"},
+        {file: "./WEB-manchitas.png"},
+        {file: "./WEB-flora.png"},
+        {file: "./WEB-celeste.png"},
+        {file: "./WEB-emi.png"},
+        {file: "./WEB-murphy.png"},
+        {file: "./WEB-lucky.png"},
+        {file: "./WEB-marina.png"},
+        {file: "./WEB-isaac.png"}
     ]
-    if (isDesktop) {
+
+    if (true) {
         //Desktop.
         return (
             <div className="character-slider-container">
@@ -43,7 +49,7 @@ export default function CharacterSlider() {
                         >
                         {characters.map((d) => {
                             return <SwiperSlide>
-                                <img src={"./fishboy.png"} alt=""/>
+                                <img src={d.file} alt=""/>
                             </SwiperSlide>;
                         })}
                     </Swiper>

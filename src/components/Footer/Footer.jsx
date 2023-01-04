@@ -17,24 +17,24 @@ export default function Footer() {
       text: "@team_fishbowl",
       ref: "https://twitter.com/team_fishbowl"
     },
-    {
-      icon: "i_tumblr.svg",
-      desktop_icon: "i_tumblr_desktop.svg",
-      text: "@fishbowl_team",
-      ref: ""
-    },
+    // {
+    //   icon: "i_tumblr.svg",
+    //   desktop_icon: "i_tumblr_desktop.svg",
+    //   text: "@fishbowl_team",
+    //   ref: ""
+    // },
     {
       icon: "i_linkedin.svg",
       desktop_icon: "i_linkedin_desktop.svg",
       text: "Fishbowl Team",
       ref: "https://www.linkedin.com/company/fishbowl-team/"
     },
-    {
-      icon: "i_instagram.svg",
-      desktop_icon: "i_instagram_desktop.svg",
-      text: "@FishbowlTeam",
-      ref: ""
-    },
+    // {
+    //   icon: "i_instagram.svg",
+    //   desktop_icon: "i_instagram_desktop.svg",
+    //   text: "@FishbowlTeam",
+    //   ref: ""
+    // },
   ];
   if (isDesktop)
   {

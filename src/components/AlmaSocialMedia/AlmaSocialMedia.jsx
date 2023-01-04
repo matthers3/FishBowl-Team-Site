@@ -5,7 +5,7 @@ import "./AlmaSocialMedia.scss";
 
 export default function AlmaSocialMedia() {
 
-    if (isDesktop) {
+    if (true) {
       //Desktop.
       return (
         <div className="alma-social-media-container" id="home">
