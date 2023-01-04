@@ -1,0 +1,40 @@
+
+.project-vertical-section {
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vw 0;
+    width: 75%;
+
+    .section-info {
+        flex: 2;
+        text-align: left !important;
+        height: 100%;
+
+        h1 {
+            font-weight: normal;
+        }
+
+        p {
+            line-height: 2em;
+            max-width: 24em;
+        }
+    }
+
+    .section-image {
+        flex: 3;
+        width: 40vw;
+        height: 18vw;
+        overflow: hidden;
+        display: flex;
+        margin-left: 8vw;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
