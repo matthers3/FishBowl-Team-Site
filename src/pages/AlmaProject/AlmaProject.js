@@ -5,6 +5,7 @@ import AlmaSocialMedia from '../../components/AlmaSocialMedia/AlmaSocialMedia';
 import ProjectAbout from '../../components/ProjectAbout/ProjectAbout';
 import ProjectVerticalSection from '../../components/ProjectVerticalSection/ProjectVerticalSection';
 import ProjectImageDescription from '../../components/ProjectImageDescription/ProjectImageDescription';
+import CharacterSlider from '../../components/CharacterSlider/CharacterSlider';
 
 const sectionData = [
     {
@@ -35,6 +36,7 @@ function AlmaProject() {
             <ProjectVerticalSection props={sectionData[0]}></ProjectVerticalSection>
             <ProjectVerticalSection props={sectionData[1]}></ProjectVerticalSection>
             <ProjectVerticalSection props={sectionData[2]}></ProjectVerticalSection>
+            <CharacterSlider></CharacterSlider>
             <ProjectImageDescription></ProjectImageDescription>
       </div>
     </div>
