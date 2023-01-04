@@ -19,10 +19,11 @@
 .nav-bar-options {
     display: flex;
     font-weight: bold;
-    width: 27vw;
+    width: auto;
     justify-content: space-between;
     margin-right: 10vw;
     font-size: 1.25vw;
+    padding: 1vw;
 }
 
 .mobile-nav-bar {
@@ -54,4 +55,5 @@
 .option {
     color: #000000;
     cursor: pointer;
+    margin: 0vw 1vw;
 }

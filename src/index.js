@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import MainSite from './pages/MainSite/MainSite';
+import AlmaProject from './pages/AlmaProject/AlmaProject'
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header/Header';
+import ErrorPage from "./components/ErrorPage/error-page";
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainSite />,
+  },
+  {
+    path: "Alma",
+    element: <AlmaProject />,
+  },
+]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header></Header>
+    <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById('root')
 );

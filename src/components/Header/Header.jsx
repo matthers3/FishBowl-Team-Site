@@ -5,7 +5,7 @@ import './Header.scss';
 
 const headersData = [
     { label: 'Home' },
-    { label: 'Projects'},
+    { label: 'Alma'},
     { label: 'About & Contact' },
     { label: 'Contact' },
 ];
@@ -25,29 +25,29 @@ export default function Header(props) {
     return Math.ceil(el.offsetHeight);
   }
 
-  const shouldActivate = (id) => {
-    try {
-      const elementY = document.getElementById(id).offsetTop;
-      const elementHeight = getAbsoluteHeight(document.getElementById(id));
-      const topMargin = -85;
-      const bottomMargin = 0;
-      if (position > elementY + topMargin && 
-          position < elementY + elementHeight + bottomMargin) {
-        return "option-selected";
-      }
-      return "";
-    } catch {
-      if (id == "home") {
-        return "option-selected";
-      }
-    }
-  }
+  // const shouldActivate = (id) => {
+  //   try {
+  //     const elementY = document.getElementById(id).offsetTop;
+  //     const elementHeight = getAbsoluteHeight(document.getElementById(id));
+  //     const topMargin = -85;
+  //     const bottomMargin = 0;
+  //     if (position > elementY + topMargin && 
+  //         position < elementY + elementHeight + bottomMargin) {
+  //       return "option-selected";
+  //     }
+  //     return "";
+  //   } catch {
+  //     if (id == "home") {
+  //       return "option-selected";
+  //     }
+  //   }
+  // }
 
-  const changePosition = () =>{
-    setPosition(window.scrollY);
-  };
+  // const changePosition = () =>{
+  //   setPosition(window.scrollY);
+  // };
 
-  window.addEventListener('scroll', changePosition);
+  // window.addEventListener('scroll', changePosition);
 
 
   // const amountOfPixelsToScroll = initialPosition - targetPosition + globalMargin;
@@ -56,14 +56,12 @@ export default function Header(props) {
     return (
       <>  
         <div className="nav-bar-options">
-          <div onClick={() => scrollTo({ id: "home", duration: 50 })} 
-            className={`option ${shouldActivate("home")}`}>{headersData[0].label.toUpperCase()}</div>
-          <div><img src="nav_bar_separator.svg" /></div>
-          <div onClick={() => scrollTo({ id: "projects", duration: 50 })}
-            className={`option ${shouldActivate("projects")}`}>{headersData[1].label.toUpperCase()}</div>
-          <div><img src="nav_bar_separator.svg" /></div>
+          <a href={`/`}><div className={`option`}>{headersData[0].label.toUpperCase()}</div></a>
+          <div><img alt="" src="nav_bar_separator.svg" /></div>
+          <a href={`/Alma`}><div className={`option`}>{headersData[1].label.toUpperCase()}</div></a>
+          {/* <div><img src="nav_bar_separator.svg" /></div>
           <div onClick={() => scrollTo({ id: "about", duration: 50 })}
-            className={`option ${shouldActivate("water-container")}`}>{headersData[2].label.toUpperCase()}</div>
+            className={`option`}>{headersData[2].label.toUpperCase()}</div> */}
         </div>
       </>);
   };
@@ -72,13 +70,13 @@ export default function Header(props) {
     return (
         <div className="mobile-nav-bar-options">
           <div onClick={() => scrollTo({ id: "home", duration: 50 })} 
-            className={`option ${shouldActivate("home")}`}>{headersData[0].label.toUpperCase()}</div>
+            className={`option`}>{headersData[0].label.toUpperCase()}</div>
           <div><img src="nav_bar_separator.svg" /></div>
           <div onClick={() => scrollTo({ id: "projects", duration: 50 })}
-            className={`option ${shouldActivate("projects")}`}>{headersData[1].label.toUpperCase()}</div>
-          <div><img src="nav_bar_separator.svg" /></div>
+            className={`option`}>{headersData[1].label.toUpperCase()}</div>
+          {/* <div><img src="nav_bar_separator.svg" /></div>
           <div onClick={() => scrollTo({ id: "about", duration: 50 })}
-            className={`option ${shouldActivate("water-container")}`}>{headersData[2].label.toUpperCase()}</div>
+            className={`option`}>{headersData[2].label.toUpperCase()}</div> */}
         </div>);
   };
 

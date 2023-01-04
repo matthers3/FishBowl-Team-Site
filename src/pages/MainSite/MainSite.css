@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  background-color: white ;
+}
+
+.App-Container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-big {
+  font-size: 4.5vw;
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;
+}
+
+.mobile-text-big {
+  font-size: 5.5vw;
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
