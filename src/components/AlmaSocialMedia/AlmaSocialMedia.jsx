@@ -23,7 +23,7 @@ export default function AlmaSocialMedia() {
             <div className="row">
                 <div className="info">
                     <div className="social-image">
-                        <a target="_blank" href="https://twitter.com/team_fishbowl">
+                        <a rel="noreferrer" target="_blank" href="https://twitter.com/team_fishbowl">
                             <img src={"twitter@4x.png"} alt=""/>
                         </a>
                         {/* <img src={"steam @4x.png"} alt=""/>

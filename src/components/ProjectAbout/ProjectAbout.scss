@@ -1,0 +1,21 @@
+
+.project-about {
+    font-family: "Prompt", sans-serif;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vw;
+
+    h1 {
+        font-weight: normal;
+    }
+
+    p {
+        text-align: center;
+        max-width: 23em;
+        line-height: 2em;
+    }
+}
