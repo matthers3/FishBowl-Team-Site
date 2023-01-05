@@ -6,7 +6,7 @@ import "./ProjectVerticalSection.scss";
 export default function ProjectVerticalSection(props) {
     const data = props.props;
   
-    if (true) {
+    if (isDesktop) {
       //Desktop.
       return (
         <div className="project-vertical-section" id="home">
@@ -27,8 +27,16 @@ export default function ProjectVerticalSection(props) {
 
       return (
         // Mobile.
-        <div className="project-vertical-section-mobile" id="home">
-
+        <div className="mobile-project-vertical-section" id="home">
+            <div className="info-title">
+                <h1>{data.title}</h1>
+            </div>
+            <div className="section-image">
+                <img src={data.image} alt="" />
+            </div>
+            <div className="info-text">
+                <p>{data.text}</p>
+            </div>
         </div>
       );
     }
