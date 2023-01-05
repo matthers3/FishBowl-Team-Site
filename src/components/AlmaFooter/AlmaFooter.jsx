@@ -77,7 +77,7 @@ export default function AlmaFooter() {
         <div className="social-media-container">
           {socialMedia.map((media) => {
             return (
-              <a href={media.ref} target="_blank">
+              <a rel="noreferrer" key={media.ref} href={media.ref} target="_blank">
                 <div className="social-media-button">
                   <div className="icon">
                     <img src={media.icon} />
