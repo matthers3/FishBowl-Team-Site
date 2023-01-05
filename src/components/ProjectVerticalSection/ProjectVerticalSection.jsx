@@ -31,7 +31,9 @@ export default function ProjectVerticalSection(props) {
             <div className="info-title">
                 <h1>{data.title}</h1>
             </div>
-            <div className="section-image">
+            <div className="section-image"
+              style={{backgroundImage: `url(./${data.firstFrame})`,
+              backgroundSize: "contain"}}>
                 <img src={data.image} alt="" />
             </div>
             <div className="info-text">

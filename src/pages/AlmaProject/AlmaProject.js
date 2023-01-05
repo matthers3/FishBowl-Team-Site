@@ -12,17 +12,20 @@ const sectionData = [
     {
         title: "MINIGAMES",
         text: "Scavenge to find robot parts and other lost items. Fish to collect all the weird ocean dwellers. Help out your older sister to become the best robot racer in the city. There is always something to do in Fishbowl City.",
-        image: "./MINIGAMES-ALMA_minigames.gif"
+        image: "./MINIGAMES-ALMA_minigames.gif",
+        firstFrame: "./MINIGAMES-ALMA_minigames.png",
     },
     {
       title: "EXPLORE",
       text: "Fishbowl City is a compact open world, where the future looks very different depending on your social status. Explore the four different zones in Alma's fully open world!",
-      image: "./EXPLORE-Alma_explore_01.gif"
+      image: "./EXPLORE-Alma_explore_01.gif",
+      firstFrame: "./EXPLORE-Alma_explore_01.png",
     },
     {
       title: "CHOOSE",
       text: "Multiple endings! Meet different points of view, to help the unispired and unmotivated Alma to decide about the adult she wants to become.",
-      image: "./CHOOSE_Alma_px.gif"
+      image: "./CHOOSE_Alma_px.gif",
+      firstFrame: "./CHOOSE_Alma_px.png",
     }
 ]
 
