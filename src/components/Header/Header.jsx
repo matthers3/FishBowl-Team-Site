@@ -68,12 +68,12 @@ export default function Header(props) {
   const displayMobile = () => {
     return (
         <div className={`mobile-nav-bar-options nav-bar`}>
-          <a className={`mobile-option ${isSelected("Home")}`} href={`/`} >
-            <div className={`option`}>{headersData[0].label.toUpperCase()}</div>
+          <a className="mobile-option" href={`/`} >
+            <div className={`option ${isSelected("Home")}`}>{headersData[0].label.toUpperCase()}</div>
           </a>
-          <div><img alt="" src="nav_bar_separator.svg" /></div>
-          <a className={`mobile-option ${isSelected("Alma")}`} href={`/Alma`}>
-            <div className={`option`}>{headersData[1].label.toUpperCase()}</div>
+          <div><img alt="" src={getSeparator()} /></div>
+          <a className={`mobile-option`} href={`/Alma`}>
+            <div className={`option ${isSelected("Alma")}`}>{headersData[1].label.toUpperCase()}</div>
           </a>
         </div>);
   };

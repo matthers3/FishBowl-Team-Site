@@ -5,7 +5,7 @@ import "./AlmaBanner.scss";
 
 export default function AlmaBanner() {
 
-    if (true) {
+    if (isDesktop) {
       //Desktop.
       return (
         <div className="alma-banner" id="home">
@@ -19,8 +19,11 @@ export default function AlmaBanner() {
 
       return (
         // Mobile.
-        <div className="alma-banner-mobile" id="home">
-          <img src={'Logo_Fishbowl_SVG.svg'} className="logo"/>
+        <div className="mobile-alma-banner" id="home">
+            <div className="bannerContainer" style={{backgroundImage: `url(./AlmaBanner.gif)`}}>
+                <img className="imageSizer" alt="" src={"./AlmaBannerSizer.png"}></img>
+            </div>
+            <img className="alma-title" alt="" src={"./Logo_WIP.png"} />
         </div>
       );
     }
