@@ -34,7 +34,7 @@ export default function CharacterSlider() {
         //Desktop.
         return (
             <div className="character-slider-container">
-                <h1>THE COOLEST CAST ...</h1>
+                <h1>THE BEST CAST ...</h1>
 
                 <div className="slider-wall" style={{backgroundImage: `url(./MURALLA-FULL-CAST.png)`}}>
                     <Swiper
@@ -58,7 +58,7 @@ export default function CharacterSlider() {
     } else {
         return (
             <div className="mobile-character-slider-container">
-            <h1>THE COOLEST CAST ...</h1>
+            <h1>THE BEST CAST ...</h1>
 
             <div className="slider-wall" style={{backgroundImage: `url(./MURALLA-FULL-CAST.png)`}}>
                 <Swiper

@@ -9,7 +9,7 @@ export default function ProjectImageDescription() {
       //Desktop.
       return (
         <div className="project-image-description" id="home">
-          <h1>ON THE MOST ANTI-COOLEST ISLAND</h1>
+          <h1>ON THE WORST ISLAND</h1>
           <div className="project-image-container">
             <img src={"./fishbowlCityEncapsuladaConceptArt.png"} alt="" />
           </div>
@@ -22,7 +22,7 @@ export default function ProjectImageDescription() {
       return (
         // Mobile.
         <div className="mobile-project-image-description" id="home">
-          <h1>ON THE MOST ANTI-COOLEST ISLAND</h1>
+          <h1>ON THE WORST ISLAND</h1>
           <div className="project-image-container">
             <img src={"./fishbowlCityEncapsuladaConceptArt.png"} alt="" />
           </div>

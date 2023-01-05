@@ -21,7 +21,7 @@ const sectionData = [
     },
     {
       title: "CHOOSE",
-      text: "Alma can pursue all story-lines at the same time, and she can decide to end the game whenever she reaches the end of any Route. This story different paths and endings can be fully explored in a single playthrough before making a final decision.",
+      text: "Multiple endings! Meet different points of view, to help the unispired and unmotivated Alma to decide about the adult she wants to become.",
       image: "./CHOOSE_Alma_px.gif"
     }
 ]
