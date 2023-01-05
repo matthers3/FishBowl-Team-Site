@@ -9,7 +9,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: white;
     height: 8vh;
     align-items: center;
     box-shadow: -1vw -3.5vw 5vw #070707;
@@ -48,10 +47,6 @@
     padding: 0 5vw;
 }
 
-.option-selected {
-    color: #FF622B !important;
-}
-
 .option {
     color: #000000;
     cursor: pointer;
@@ -61,4 +56,32 @@
 .mobile-option {
     width: 100%;
     text-align: center;
+}
+
+.nav-bar-alma-project {
+    background-color: black;
+    
+    .option {
+        color: white;
+    }
+
+    .option-selected {
+        color: cyan !important;
+    }
+
+
+}
+
+.nav-bar-default {
+    background-color: white;
+
+    .option {
+        color: black;
+    }
+
+    .option-selected {
+        color: #FF622B !important;
+    }
+
+
 }

@@ -21,6 +21,10 @@ const router = createBrowserRouter([
     path: "Alma",
     element: <AlmaProject />,
   },
+  {
+    path: "*",
+    element: <MainSite />,
+  },
 ]);
 
 ReactDOM.render(

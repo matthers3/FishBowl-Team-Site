@@ -12,69 +12,69 @@ const headersData = [
 
 export default function Header(props) {
 
-  const [position, setPosition] = useState(window.scrollY);
+  const [currentUrl, setCurrentUrl] = useState("/");
 
-  function getAbsoluteHeight(el) {
-    // Get the DOM Node if you pass in a string
-    el = (typeof el === 'string') ? document.querySelector(el) : el; 
-  
-    var styles = window.getComputedStyle(el);
-    var margin = parseFloat(styles['marginTop']) +
-                 parseFloat(styles['marginBottom']);
-  
-    return Math.ceil(el.offsetHeight);
+  const getColor = () => {
+    if (currentUrl == "/Alma") {
+      return "alma-project";
+    }
+    else
+    {
+      return "default";
+    }
   }
 
-  // const shouldActivate = (id) => {
-  //   try {
-  //     const elementY = document.getElementById(id).offsetTop;
-  //     const elementHeight = getAbsoluteHeight(document.getElementById(id));
-  //     const topMargin = -85;
-  //     const bottomMargin = 0;
-  //     if (position > elementY + topMargin && 
-  //         position < elementY + elementHeight + bottomMargin) {
-  //       return "option-selected";
-  //     }
-  //     return "";
-  //   } catch {
-  //     if (id == "home") {
-  //       return "option-selected";
-  //     }
-  //   }
-  // }
+  const getSeparator = () => {
+    if (currentUrl === "/Alma") {
+      return "nav_bar_alma_separator.svg";
+    }
+    else
+    {
+      return "nav_bar_separator.svg";
+    }
+  }
 
-  // const changePosition = () =>{
-  //   setPosition(window.scrollY);
-  // };
+  const isSelected = (currentPath) => {
+    if (currentUrl === "/Alma" && currentPath === "Alma") {
+      return "option-selected";
+    }
+    else if (currentUrl !== "/Alma" && currentPath === "Home")
+    {
+      return "option-selected";
+    }
+  }
 
-  // window.addEventListener('scroll', changePosition);
-
-
-  // const amountOfPixelsToScroll = initialPosition - targetPosition + globalMargin;
+  if (window.location.pathname !== currentUrl)
+  {
+    setCurrentUrl(window.location.pathname);
+    console.log(window.location.pathname);
+  }
 
   const displayDesktop = () => {
     return (
       <>  
-        <div className="nav-bar-options">
-          <a href={`/`}><div className={`option`}>{headersData[0].label.toUpperCase()}</div></a>
-          <div><img alt="" src="nav_bar_separator.svg" /></div>
-          <a href={`/Alma`}><div className={`option`}>{headersData[1].label.toUpperCase()}</div></a>
-          {/* <div><img src="nav_bar_separator.svg" /></div>
-          <div onClick={() => scrollTo({ id: "about", duration: 50 })}
-            className={`option`}>{headersData[2].label.toUpperCase()}</div> */}
+        <div className={"nav-bar-options"}>
+          <a href={`/`}>
+            <div className={`option ${isSelected("Home")}`}>{headersData[0].label.toUpperCase()}</div>
+          </a>
+          <div><img alt="" src={getSeparator()} /></div>
+          <a href={`/Alma`}>
+            <div className={`option ${isSelected("Alma")}`}>{headersData[1].label.toUpperCase()}</div>
+          </a>
         </div>
       </>);
   };
 
   const displayMobile = () => {
     return (
-        <div className="mobile-nav-bar-options">
-          <a className={" mobile-option"} href={`/`}><div className={`option`}>{headersData[0].label.toUpperCase()}</div></a>
-          <div><img src="nav_bar_separator.svg" /></div>
-          <a className={" mobile-option"} href={`/Alma`}><div className={`option`}>{headersData[1].label.toUpperCase()}</div></a>
-          {/* <div><img src="nav_bar_separator.svg" /></div>
-          <div onClick={() => scrollTo({ id: "about", duration: 50 })}
-            className={`option`}>{headersData[2].label.toUpperCase()}</div> */}
+        <div className={`mobile-nav-bar-options nav-bar`}>
+          <a className={`mobile-option ${isSelected("Home")}`} href={`/`} >
+            <div className={`option`}>{headersData[0].label.toUpperCase()}</div>
+          </a>
+          <div><img alt="" src="nav_bar_separator.svg" /></div>
+          <a className={`mobile-option ${isSelected("Alma")}`} href={`/Alma`}>
+            <div className={`option`}>{headersData[1].label.toUpperCase()}</div>
+          </a>
         </div>);
   };
 
@@ -82,12 +82,12 @@ export default function Header(props) {
   return (
     <div className="full-width">
       <BrowserView>
-        <div className="nav-bar">
+        <div className={`nav-bar nav-bar-${getColor()}`}>
           {displayDesktop()}
         </div>
       </BrowserView>
       <MobileView>
-        <div className="mobile-nav-bar">
+        <div className={`mobile-nav-bar nav-bar-${getColor()}`}>
           {displayMobile()}
         </div>
       </MobileView>
