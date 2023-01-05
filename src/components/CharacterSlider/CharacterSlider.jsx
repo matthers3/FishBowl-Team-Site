@@ -36,7 +36,7 @@ export default function CharacterSlider() {
             <div className="character-slider-container">
                 <h1>THE COOLEST CAST</h1>
 
-                <div class="slider-wall" style={{backgroundImage: `url(./MURALLA-FULL-CAST.png)`}}>
+                <div className="slider-wall" style={{backgroundImage: `url(./MURALLA-FULL-CAST.png)`}}>
                     <Swiper
                         autoplay={{
                             delay: 1000,
@@ -48,7 +48,7 @@ export default function CharacterSlider() {
                         modules={[Autoplay, Pagination, Navigation]}
                         >
                         {characters.map((d) => {
-                            return <SwiperSlide>
+                            return <SwiperSlide key={d.file}>
                                 <img src={d.file} alt=""/>
                             </SwiperSlide>;
                         })}

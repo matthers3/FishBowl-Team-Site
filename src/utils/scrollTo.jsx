@@ -8,13 +8,13 @@ const logError = () =>
 const getElementPosition = (element) => element.offsetTop;
 
 export const scrollTo = ({ id, ref = null, duration = 3000 }) => {
-  console.log("asjdfkasdf");
+  // console.log("asjdfkasdf");
  // the position of the scroll bar before the user clicks the button
  const initialPosition = window.scrollY;
 
  // decide what type of reference that is
  // if neither ref or id is provided  set element to null
- console.log(id);
+//  console.log(id);
 const element = ref ? ref.current : id ? document.getElementById(id) : null;
 
  if (!element) {

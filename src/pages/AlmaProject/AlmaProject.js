@@ -6,6 +6,7 @@ import ProjectAbout from '../../components/ProjectAbout/ProjectAbout';
 import ProjectVerticalSection from '../../components/ProjectVerticalSection/ProjectVerticalSection';
 import ProjectImageDescription from '../../components/ProjectImageDescription/ProjectImageDescription';
 import CharacterSlider from '../../components/CharacterSlider/CharacterSlider';
+import AlmaFooter from '../../components/AlmaFooter/AlmaFooter';
 
 const sectionData = [
     {
@@ -38,6 +39,7 @@ function AlmaProject() {
             <ProjectVerticalSection props={sectionData[2]}></ProjectVerticalSection>
             <CharacterSlider></CharacterSlider>
             <ProjectImageDescription></ProjectImageDescription>
+            <AlmaFooter></AlmaFooter>
       </div>
     </div>
   );

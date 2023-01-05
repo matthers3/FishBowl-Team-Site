@@ -47,7 +47,7 @@ export default function Header(props) {
   if (window.location.pathname !== currentUrl)
   {
     setCurrentUrl(window.location.pathname);
-    console.log(window.location.pathname);
+    // console.log(window.location.pathname);
   }
 
   const displayDesktop = () => {
