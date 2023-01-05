@@ -32,3 +32,43 @@
         margin-bottom: 1vw;
     }
 }
+
+.mobile-character-slider-container {
+    font-family: "Prompt", sans-serif;
+    color: white;
+    width: 100%;
+    margin-top: 4vw;
+
+    h1 {
+        font-weight: normal;
+        margin-bottom: 3vw;
+        font-size: 1em;
+    }
+
+    .character-slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider-wall {
+        width: 100%;
+        height: 40vw;
+        background-size: cover;
+
+        .swiper {
+            height: 100%;
+        }
+    }
+
+    .swiper-slide {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    
+        img {
+            width: 50%;
+            margin-bottom: 2.5vw;
+        }
+    }
+}

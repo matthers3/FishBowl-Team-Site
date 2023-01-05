@@ -7,13 +7,13 @@ export default function AlmaFooter() {
 
   const socialMedia = [
     {
-      icon: "contact_mail.svg",
+      icon: "contact_mail_dark.svg",
       desktop_icon: "contact_button_desktop.svg",
       text: "GET IN TOUCH!",
       ref: "mailto:fishbowlcity.team@gmail.com"
     },
     {
-      icon: "i_twitter.svg",
+      icon: "i_twitter_dark.svg",
       desktop_icon: "i_twitter_desktop.svg",
       text: "@team_fishbowl",
       ref: "https://twitter.com/team_fishbowl"
@@ -25,7 +25,7 @@ export default function AlmaFooter() {
     //   ref: ""
     // },
     {
-      icon: "i_linkedin.svg",
+      icon: "i_linkedin_dark.svg",
       desktop_icon: "i_linkedin_desktop.svg",
       text: "Fishbowl Team",
       ref: "https://www.linkedin.com/company/fishbowl-team/"
@@ -38,7 +38,7 @@ export default function AlmaFooter() {
     // },
   ];
 
-  if (true) {
+  if (isDesktop) {
     //Desktop.
     return (
       <div className="project-footer" id="home">
@@ -58,10 +58,6 @@ export default function AlmaFooter() {
                 );
               })}
             </div>
-
-
-
-
           </div>
           <div className="logo-button">
             <a href={"/"}><img alt="" src={"./Logo_transparent.png"}/></a>
@@ -73,8 +69,31 @@ export default function AlmaFooter() {
 
     return (
       // Mobile.
-      <div className="alma-banner-mobile" id="home">
+      <div className="project-footer-mobile" id="contact">
+        <div className="project-footer-image">
+          <img alt="" src={"./trashdog_idlex4.gif"} />
+        </div>
+        
+        <div className="social-media-container">
+          {socialMedia.map((media) => {
+            return (
+              <a href={media.ref} target="_blank">
+                <div className="social-media-button">
+                  <div className="icon">
+                    <img src={media.icon} />
+                  </div>
+                  <div className="text">
+                    {media.text}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
 
+        <div className="logo-button">
+            <a href={"/"}><img alt="" src={"./Logo_transparent.png"}/></a>
+        </div>
       </div>
     );
   }

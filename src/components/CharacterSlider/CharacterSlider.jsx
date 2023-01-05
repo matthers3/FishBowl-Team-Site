@@ -30,11 +30,11 @@ export default function CharacterSlider() {
         {file: "./WEB-isaac.png"}
     ]
 
-    if (true) {
+    if (isDesktop) {
         //Desktop.
         return (
             <div className="character-slider-container">
-                <h1>THE COOLEST CAST</h1>
+                <h1>THE COOLEST CAST ...</h1>
 
                 <div className="slider-wall" style={{backgroundImage: `url(./MURALLA-FULL-CAST.png)`}}>
                     <Swiper
@@ -56,6 +56,29 @@ export default function CharacterSlider() {
                 </div>
             </div>);
     } else {
-        return (<></>);
+        return (
+            <div className="mobile-character-slider-container">
+            <h1>THE COOLEST CAST ...</h1>
+
+            <div className="slider-wall" style={{backgroundImage: `url(./MURALLA-FULL-CAST.png)`}}>
+                <Swiper
+                    autoplay={{
+                        delay: 1000,
+                        disableOnInteraction: false
+                    }}
+                    simulateTouch={true}
+                    slidesPerView={5}
+                    loop={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    >
+                    {characters.map((d) => {
+                        return <SwiperSlide key={d.file}>
+                            <img src={d.file} alt=""/>
+                        </SwiperSlide>;
+                    })}
+                </Swiper>
+            </div>
+        </div>
+        );
     }
 }
