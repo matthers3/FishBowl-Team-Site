@@ -15,7 +15,7 @@ export default function Header(props) {
   const [currentUrl, setCurrentUrl] = useState("/");
 
   const getColor = () => {
-    if (currentUrl == "/Alma") {
+    if (currentUrl.includes("/Alma")) {
       return "alma-project";
     }
     else
@@ -25,7 +25,7 @@ export default function Header(props) {
   }
 
   const getSeparator = () => {
-    if (currentUrl === "/Alma") {
+    if (currentUrl.includes("/Alma")) {
       return "nav_bar_alma_separator.svg";
     }
     else
@@ -35,10 +35,10 @@ export default function Header(props) {
   }
 
   const isSelected = (currentPath) => {
-    if (currentUrl === "/Alma" && currentPath === "Alma") {
+    if (currentUrl.includes("/Alma") && currentPath === "Alma") {
       return "option-selected";
     }
-    else if (currentUrl !== "/Alma" && currentPath === "Home")
+    else if (!currentUrl.includes("/Alma") && currentPath === "Home")
     {
       return "option-selected";
     }
