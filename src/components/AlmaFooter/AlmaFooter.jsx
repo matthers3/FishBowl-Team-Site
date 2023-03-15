@@ -42,9 +42,6 @@ export default function AlmaFooter() {
     //Desktop.
     return (
       <div className="project-footer" id="home">
-        <div className="project-footer-image">
-          <img alt="" src={"./trashdog_idlex4.gif"} />
-        </div>
         <div className="project-footer-buttons">
           <div className="social-media">
             <div className="social-media-container">
@@ -59,9 +56,6 @@ export default function AlmaFooter() {
               })}
             </div>
           </div>
-          <div className="logo-button">
-            <a href={"/"}><img alt="" src={"./Logo_transparent.png"}/></a>
-          </div>
         </div>
       </div>
     )
@@ -70,9 +64,6 @@ export default function AlmaFooter() {
     return (
       // Mobile.
       <div className="project-footer-mobile" id="contact">
-        <div className="project-footer-image">
-          <img alt="" src={"./trashdog_idlex4.gif"} />
-        </div>
         
         <div className="social-media-container">
           {socialMedia.map((media) => {
@@ -89,10 +80,6 @@ export default function AlmaFooter() {
               </a>
             );
           })}
-        </div>
-
-        <div className="logo-button">
-            <a href={"/"}><img alt="" src={"./Logo_transparent.png"}/></a>
         </div>
       </div>
     );

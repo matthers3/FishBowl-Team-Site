@@ -6,28 +6,9 @@ import ProjectAbout from '../../components/ProjectAbout/ProjectAbout';
 import ProjectVerticalSection from '../../components/ProjectVerticalSection/ProjectVerticalSection';
 import ProjectImageDescription from '../../components/ProjectImageDescription/ProjectImageDescription';
 import CharacterSlider from '../../components/CharacterSlider/CharacterSlider';
+import Features from '../../components/Features/Features';
+import HangOut from '../../components/HangOut/HangOut';
 import AlmaFooter from '../../components/AlmaFooter/AlmaFooter';
-
-const sectionData = [
-    {
-        title: "MINIGAMES",
-        text: "Scavenge to find robot parts and other lost items. Fish to collect all the weird ocean dwellers. Help out your older sister to become the best robot racer in the city. There is always something to do in Fishbowl City.",
-        image: "./MINIGAMES-ALMA_minigames.gif",
-        firstFrame: "./MINIGAMES-ALMA_minigames.png",
-    },
-    {
-      title: "EXPLORE",
-      text: "Fishbowl City is a compact open world, where the future looks very different depending on your social status. Explore the four different zones in Alma's fully open world!",
-      image: "./EXPLORE-Alma_explore_01.gif",
-      firstFrame: "./EXPLORE-Alma_explore_01.png",
-    },
-    {
-      title: "CHOOSE",
-      text: "Multiple endings! Meet different points of view, to help the unispired and unmotivated Alma to decide about the adult she wants to become.",
-      image: "./CHOOSE_Alma_px.gif",
-      firstFrame: "./CHOOSE_Alma_px.png",
-    }
-]
 
 function AlmaProject() {
 
@@ -35,13 +16,9 @@ function AlmaProject() {
     <div className="AlmaProject">
       <div className="AlmaProject-Container">
             <AlmaBanner></AlmaBanner>
-            <AlmaSocialMedia></AlmaSocialMedia>
             <ProjectAbout></ProjectAbout>
-            <ProjectVerticalSection props={sectionData[0]}></ProjectVerticalSection>
-            <ProjectVerticalSection props={sectionData[1]}></ProjectVerticalSection>
-            <ProjectVerticalSection props={sectionData[2]}></ProjectVerticalSection>
-            <CharacterSlider></CharacterSlider>
-            <ProjectImageDescription></ProjectImageDescription>
+            <Features></Features>
+            <HangOut></HangOut>
             <AlmaFooter></AlmaFooter>
       </div>
     </div>

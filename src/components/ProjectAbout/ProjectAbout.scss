@@ -7,7 +7,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2vw;
 
     h1 {
         font-weight: normal;
@@ -15,8 +14,16 @@
 
     p {
         text-align: center;
-        max-width: 23em;
-        line-height: 2em;
+        max-width: 28em;
+    }
+
+    .full-width-image {
+        width: 85%;
+        margin-top: 2.5vh;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -37,8 +44,15 @@
 
     p {
         text-align: center;
-        max-width: 23em;
-        line-height: 2em;
+        max-width: 28em;
         font-size: 0.75em;
+    }
+
+    .full-width-image {
+        margin-top: 5vw;
+
+        img {
+            width: 100%;
+        }
     }
 }
