@@ -7,12 +7,8 @@ export default function WaterContainer() {
 
     return (
       <div className="water-container" id="water-container">
-        <div className="water-top">
-            <img src={'wave_tops.svg'}/>
-        </div>
         <div className="under-water">
           <TeamMembers></TeamMembers>
-          <Footer></Footer>
         </div>
       </div>
     );

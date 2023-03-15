@@ -1,6 +1,6 @@
 
 .water-container {
-    margin: 5vh 0 0 0;
+    margin: 5vh 0 5vh 0;
     width: 100%;
 }
 
@@ -14,5 +14,6 @@
 
 .under-water {
     margin-top: -0.5vw;
-    background: linear-gradient(180deg, #64B9FF, #008AFF 40%, #005ECE);
+    background: black;
+    margin-bottom: 10vw;
 }

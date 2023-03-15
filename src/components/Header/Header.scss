@@ -30,7 +30,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: black;
     height: 8vh;
     align-items: center;
     box-shadow: -1vw -3.5vw 5vw #070707;
@@ -72,10 +72,10 @@
 }
 
 .nav-bar-default {
-    background-color: white;
+    background-color: black;
 
     .option {
-        color: black;
+        color: white;
     }
 
     .option-selected {

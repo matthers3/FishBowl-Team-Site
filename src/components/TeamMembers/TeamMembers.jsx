@@ -7,128 +7,86 @@ export default function TeamMembers() {
     const members = [
       {
         name: 'Cat C. Molina',
-        role: 'Designer.',
-        description: `Lover of all things media. Illustrator, animator, and aspiring writter.
-              Favorite game: Psychonauts (2005).`,
-        img: 'Team_Cat_x4_circle.png'
+        role: 'Studio Lead, Producer & Designer',
+        card: ``,
+        img: 'pp_cat_n.png'
       },
       {
         name: 'Matías Gabler',
-        role: 'Programmer',
-        description: `Passionate about data and software. Always looking for new challenges. 
-          Favorite game: Castlevania: Order of Ecclesia (2008).`,
-        img: 'Team_Matias_x4_circle.png'
+        role: 'Lead Programer, Assistant Producer',
+        card: ``,
+        img: 'pp_mati_n.png'
       },
       {
-        name: 'Fran "Pan" Pezoa',
-        role: 'Designer & Programmer',
-        description: `Making games since preteen years, always thinking how to 
-          make things more fun. Favorite game: Mother 3 (2006).`,
-          img: 'Team_Pan_x4_circle.png'
+        name: '"Pan" Pezoa',
+        role: 'Designer, Artist, Assistant Programer',
+        card: ``,
+          img: 'pp_pan_n.png'
       },
       {
         name: 'Abril Araneda',
-        role: 'Designer.',
-        description: `Illustrator and animator. In love with experimental animation.
-        Favorite game: Legend of the phoenix (2020).`,
-        img: 'Team_Abril_x4_circle.png'
+        role: '3D, Mixed Media Artist, Designer',
+        card: ``,
+        img: 'pp_rat_n.png'
       },
     ]
 
     const meetTheTeam = {
-      title: 'Meet the team',
-      p1: `We are a small, independent team from Santiago, Chile. 
-          Joined by our love for worldbuilding, interactive storytelling, 
-          beautiful visual experiences and always looking to achieve fun first! 
-          We make games that we wanna play and build worlds that 
-          have something to say.`,
-      p2: `We like meaningful stories and we’d like to make stories that are 
-          meaningful to you too.`,
+      title: 'MEET THE TEAM !',
+      p1: <>Fishbowl Team is a small but passionate team based in Santiago, 
+      Chile. Founded by four besties trying to pursue their dream career. 
+      Bound together by a love for world-building, interactive storytelling, 
+      beautiful visual experiences and an insatiable thirst for fun!</>
     }
 
     const createMember =  (index, direction) => {
-      if (direction == 'right')
-      {
         return (
-          <div className="team-member-container"
-          style={{background: `url(./Fishfacingright_01.svg) no-repeat`}}>
+          <div className="team-member-container">
           <div className="filler"></div>
-          <div className="member member-right">
+          <div className="member">
+            <div className="member-image">
+              <img src={members[index].img} alt=""/>
+            </div>
             <div className="member-info">
               <div className="member-name">
-                  {members[index].name}
+                  <strong class="extra-bold">{members[index].name}</strong>
+                </div>
+                <div className="member-cardd">
+                  cardd
                 </div>
                 <div className="member-role">
                   {members[index].role}
-                </div>
-                <div className="member-description">
-                  {members[index].description}
                 </div>
                 <div className="more-info more-info-left">
                   {/* <div>More me!</div> */}
                 </div>
             </div>
-            <div className="member-image">
-              <img src={members[index].img} />
-            </div>
           </div>
         </div>
         );
-      } else {
-        return (
-          <div className="team-member-container"
-            style={{background: `url(./Fishfacingleft_01.svg) no-repeat`}}>
-            <div className="member member-left">
-              <div className="member-image">
-                <img src={members[index].img} />
-              </div>
-              <div className="member-info">
-                <div className="member-name">
-                    {members[index].name}
-                  </div>
-                  <div className="member-role">
-                    {members[index].role}
-                  </div>
-                  <div className="member-description">
-                    {members[index].description}
-                  </div>
-                  <div className="more-info more-info-left">
-                    {/* <div>More me!</div> */}
-                  </div>
-              </div>
-            </div>
-            <div className="filler"></div>
-          </div>
-        );
-      }
     }
 
     if (isDesktop)
     {
       return (
-        <div className="team-members" id="about">
-          <div className="team-title text-big">
-            {meetTheTeam.title}
-          </div>
-          <div className="about-text-container">
-            <div className="about-text">
-              <div className="p1">
-              {meetTheTeam.p1}
-              </div>
-              <div className="p2">
-              {meetTheTeam.p2}
+        <div className="team-members desktop" id="about">
+          <div className="vertical-section guide">
+            <div className="team-title text-big">
+              {meetTheTeam.title}
+            </div>
+            <div className="about-text-container">
+              <div className="about-text">
+                <div className="p1">
+                {meetTheTeam.p1}
+                </div>
               </div>
             </div>
           </div>
-          <div className="the-team">
-            <div className="col">
+          <div className="the-team guide">
               {createMember(0, 'right')}
-              {createMember(2, 'right')}
-            </div>
-            <div className="col">
-              {createMember(1, 'left')}
+              {createMember(1, 'right')}
+              {createMember(2, 'left')}
               {createMember(3, 'left')}
-            </div>
           </div>
         </div>
       );
@@ -157,13 +115,13 @@ export default function TeamMembers() {
                     <img src={member.img}/>
                   </div>
                   <div className="member-name">
-                    {member.name}
+                    <strong>{member.name}</strong>
+                  </div>
+                  <div className="member-cardd">
+                    cardd
                   </div>
                   <div className="member-role">
                     {member.role}
-                  </div>
-                  <div className="member-description">
-                    {member.description}
                   </div>
                   <div className="more-info">
                     {/* <div>More me!</div> */}

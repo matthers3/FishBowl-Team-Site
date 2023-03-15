@@ -14,13 +14,13 @@ const sectionData = [
     {
       title: "BUILD YOUR BOT",
       text: "Who knew that a racebot was just a Hat, a Gut and a Butt?",
-      image: "./bot_build.gif",
+      image: "./bot_build_2.gif",
       firstFrame: "",
     },
     {
       title: "RACE IT TO VICTORY!",
       text: "In heated, 4-v-4,last-one-standing style races.",
-      image: "./CHOOSE_Alma_px.gif",
+      image: "./race_nitro.gif",
       firstFrame: "./CHOOSE_Alma_px.png",
     }
 ]

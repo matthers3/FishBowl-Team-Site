@@ -1,6 +1,8 @@
 
 .team-title {
     color: white;
+    font-size: 3em;
+    margin-right: 5vw;
 }
 
 .team-title-mobile {
@@ -10,15 +12,26 @@
 }
 
 .team-members {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    .vertical-section {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+    }
 
     .team-member-container {
         height: 40vh;
         align-items: center;
         background-size: 100% 100% !important;
         display: flex;
+        flex-direction: column;
 
         .filler {
             flex: 2.5;
@@ -26,36 +39,10 @@
             clear: both;
         }
 
-        .member-right {
-            margin-right: 5%;
-
-            .member-info {
-                margin-right: 2vh;
-
-                .more-info {
-                    margin-left: -1vh;
-                    justify-content: flex-start;
-                }
-            }
-        }
-
-        .member-left {
-            margin-left: 5%;
-
-            .member-info {
-                margin-left: 2vh;
-
-                .more-info {
-                    margin-right: -1vh;
-                    justify-content: flex-end;
-                }
-            }
-
-        }
-
         .member {
             flex: 6 1;
-            
+            display: flex;
+            flex-direction: column;
             margin-top: 3%;
 
             @media (max-aspect-ratio: 8/5) {
@@ -69,8 +56,7 @@
             .member-info {
                 flex: 3 1;
                 height: 100%;
-                text-align: left;
-                font-family: "Prompt", sans-serif;
+                text-align: center;
 
                 .member-name {
                     font-size: 1.5vw;
@@ -78,21 +64,20 @@
                 }
 
                 .member-role {
-                    color: #49454F;
-                    font-size: 1vw;
+                    color: white;
                     margin-top: 2%;
+                    max-width: 11em;
                 }
 
-                .member-description {
-                    color: #49454F;
-                    height: 44%;
-                    font-size: 1vw;
+                .member-cardd {
+                    color: #FF9800;
+                    text-decoration: underline;
+                    margin: 1vw 0;
                 }
 
                 .more-info {
                     display: flex;
                     flex-direction: row;
-                    font-size: 1.25vw;
             
                     div {
                         background-color: #EEE8F4;
@@ -109,7 +94,7 @@
     
             .member-image {
                 flex: 2;
-    
+                padding: 0vw 3vw;
                 img {
                     object-fit: cover;
                     width: 100%;
@@ -126,6 +111,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: -1.5vh;
 }
 
@@ -133,11 +119,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 20em;
+    text-align: center;
+    color: white;
 }
 
 .about-text {
-    font-family: 'Prompt', sans-serif;
-    font-size: 1vw;
     line-height: 2em;
     width: 39vw;
 }
@@ -175,7 +163,6 @@
 }
 
 .the-team-mobile {
-    margin-top: -6vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -183,36 +170,42 @@
 }
 
 .team-member-mobile {
-    margin-top: 6vh;
-    background-color: #FFFFFF;
     border-radius: 5%;
     width: 56vw;
-    text-align: left;
-    padding: 4vh 10vw;
+    text-align: center;
+    padding: 2vh 10vw;
     font-family: "Prompt", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .member-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3vh;
-
+        flex: 2;
+        padding: 0vw 3vw;
         img {
-            width: 32vw;
+            object-fit: cover;
+            width: 100%;
         }
     }
 
+    .member-cardd {
+        color: #FF9800;
+        text-decoration: underline;
+        margin: 1vw 0;
+    }
+    
     .member-name {
         font-size: 5.5vw;
-        margin-bottom: 2vh;
+        color: white;
     }
     
     .member-role {
-        color: #49454F;
+        color: white;
+        max-width: 11em;
     }
 
     .member-description {
-        color: #49454F;
+        color: white;
     }
 
     .more-info {
