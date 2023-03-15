@@ -1,7 +1,7 @@
 
 .team-title {
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-right: 5vw;
 }
 
@@ -24,6 +24,7 @@
         width: 75%;
         align-items: center;
         justify-content: center;
+        margin-bottom: 3vw;
     }
 
     .team-member-container {
@@ -44,14 +45,6 @@
             display: flex;
             flex-direction: column;
             margin-top: 3%;
-
-            @media (max-aspect-ratio: 8/5) {
-                height: 60%;
-            }
-
-            @media (min-aspect-ratio: 8/5) {
-                height: 75%;
-            }
 
             .member-info {
                 flex: 3 1;
@@ -128,6 +121,7 @@
 .about-text {
     line-height: 2em;
     width: 39vw;
+    text-align: left;
 }
 
 .about-text-mobile {
@@ -149,6 +143,7 @@
 .the-team {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 2vw;
 }
 
 .member {

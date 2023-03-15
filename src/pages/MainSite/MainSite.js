@@ -8,7 +8,7 @@ function MainSite() {
 
   return (
     <div className="App">
-      <div className="App-Container">
+      <div className="App-Container main-site">
         <LogoContainer></LogoContainer>
         <WaterContainer></WaterContainer>
       </div>
