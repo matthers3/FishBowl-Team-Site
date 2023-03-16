@@ -14,5 +14,8 @@
 
 .under-water {
     margin-top: -0.5vw;
-    background: linear-gradient(180deg, #64B9FF, #008AFF 40%, #005ECE);
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

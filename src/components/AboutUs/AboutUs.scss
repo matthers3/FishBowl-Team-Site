@@ -1,0 +1,45 @@
+
+.about-us {
+    display: flex;
+    table-layout: fixed;
+    justify-content: center;
+    text-align: left;
+    margin-top: 6vw;
+}
+
+.about-us-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 6vw;
+    color: white;
+    max-width: 20em;
+
+    .about-p-mobile {
+        margin: 6vw 0;
+        text-align: center;
+
+        .about-us-text {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.about-us-cel {
+    display: table-row;
+    text-align: left !important;
+    margin: 0 3vw;
+}
+
+.about-us-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 22em;
+    text-align: left;
+    color: white;
+}

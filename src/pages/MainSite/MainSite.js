@@ -1,4 +1,4 @@
-import './MainSite.css';
+import './MainSite.scss';
 import React from 'react';
 import LogoContainer from '../../components/Logo Container/LogoContainer';
 import WaterContainer from '../../components/WaterContainer/WaterContainer';
@@ -8,7 +8,7 @@ function MainSite() {
 
   return (
     <div className="App">
-      <div className="App-Container">
+      <div className="App-Container main-site">
         <LogoContainer></LogoContainer>
         <WaterContainer></WaterContainer>
       </div>

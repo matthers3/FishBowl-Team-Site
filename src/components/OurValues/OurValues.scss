@@ -1,0 +1,61 @@
+
+.values-title {
+    margin-top: 6vw;
+    margin-bottom: 4vw;
+    color: white;
+    font-weight: 800;
+    font-size: 2.34em;
+    width: 100%;
+}
+
+.values {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.values-mobile {
+    color: white;
+    display: flex;
+    justify-content: center;
+   
+
+    div {
+        text-align: center !important;
+    }
+}
+
+.values-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 3vw;
+}
+
+.values-cel {
+    display: table-cell;
+    text-align: left;
+    margin-bottom: 2vw;
+
+    p {
+        max-width: 22em;
+    }
+}
+
+.values-cel-mobile {
+    display: table-cell;
+    text-align: left;
+    margin: 6vw 0;
+
+    p {
+        max-width: 22em;
+    }
+}
+
+.values-col-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 3vw;
+    max-width: 20em;
+}

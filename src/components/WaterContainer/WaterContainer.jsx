@@ -1,18 +1,21 @@
 import React from "react";
 import "./WaterContainer.scss";
 import TeamMembers from "../TeamMembers/TeamMembers";
-import Footer from "../Footer/Footer";
+import AboutUs from "../AboutUs/AboutUs";
+import OurValues from "../OurValues/OurValues";
+import AlmaFooter from "../AlmaFooter/AlmaFooter";
+import FishbowlFooter from "../FishbowlFooter/FishbowlFooter";
 
 export default function WaterContainer() {
 
     return (
       <div className="water-container" id="water-container">
-        <div className="water-top">
-            <img src={'wave_tops.svg'}/>
-        </div>
         <div className="under-water">
           <TeamMembers></TeamMembers>
-          <Footer></Footer>
+          <AboutUs></AboutUs>
+          <OurValues></OurValues>
+          <AlmaFooter></AlmaFooter>
+          <FishbowlFooter></FishbowlFooter>
         </div>
       </div>
     );

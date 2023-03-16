@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import MainSite from './pages/MainSite/MainSite';
 import AlmaProject from './pages/AlmaProject/AlmaProject'
 import reportWebVitals from './reportWebVitals';
