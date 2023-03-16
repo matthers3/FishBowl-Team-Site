@@ -8,25 +8,25 @@ export default function TeamMembers() {
       {
         name: 'Cat C. Molina',
         role: 'Studio Lead, Producer & Designer',
-        card: ``,
+        card: `https://cattoshark.carrd.co/`,
         img: 'pp_cat_n.png'
       },
       {
         name: 'Matías Gabler',
         role: 'Lead Programer, Assistant Producer',
-        card: ``,
+        card: `https://matiasgabler.carrd.co/`,
         img: 'pp_mati_n.png'
       },
       {
         name: '"Pan" Pezoa',
         role: 'Designer, Artist, Assistant Programer',
-        card: ``,
+        card: `https://panshios.carrd.co/`,
           img: 'pp_pan_n.png'
       },
       {
         name: 'Abril Araneda',
         role: '3D, Mixed Media Artist, Designer',
-        card: ``,
+        card: `http://juliogatuno.carrd.co/`,
         img: 'pp_rat_n.png'
       },
     ]
@@ -52,7 +52,8 @@ export default function TeamMembers() {
                   <strong class="extra-bold">{members[index].name}</strong>
                 </div>
                 <div className="member-cardd">
-                  cardd
+                  <a className="card-link" href={members[index].card}
+                  target="_blank" rel="noreferrer">cardd</a>
                 </div>
                 <div className="member-role">
                   {members[index].role}
@@ -115,7 +116,8 @@ export default function TeamMembers() {
                     <strong>{member.name}</strong>
                   </div>
                   <div className="member-cardd">
-                    cardd
+                  <a className="card-link" href={member.card}
+                    target="_blank" rel="noreferrer">cardd</a>
                   </div>
                   <div className="member-role">
                     {member.role}

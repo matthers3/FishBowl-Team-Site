@@ -21,12 +21,13 @@ export default function AboutUs() {
       We are unafraid to tackle what we perceive to be real life world problems and 
       criticize status quo.</>,
       title3: <strong className="emi medium">“The games we want to play”</strong>,
-      p3: <>We are consumers of indie media. As a team, have a vast and diverse library of 
+      p3: <p>We are consumers of indie media. As a team, have a vast and diverse library of 
       media interests (games, books, series and movies, music even!) outside of the gaming 
       space that inspire our understanding of what digital media can accomplish. That means
        we do not feel limited inside our interests, the genres we want to tackle, or the 
        themes we will explore. 
-      We’re currently obsessed with Sci-fi, in the future? who knows.</>,
+      We’re currently obsessed with <a href="https://www.youtube.com/watch?v=vRBgZ4aMPio"
+      target="_blank" className="white-link">Sci-fi</a>, in the future? who knows.</p>,
     }
 
     if (isDesktop)

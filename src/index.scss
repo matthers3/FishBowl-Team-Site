@@ -37,7 +37,6 @@ html {
 
 .desktop {
   p {
-    font-size: 1.25em;
     line-height: 1.3em;
   }
 
@@ -83,4 +82,19 @@ html {
 .alma {
   color: #008AFF;
   font-weight: 800;
+}
+
+.white-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.blue-link {
+  color: #008AFF;
+  text-decoration: underline;
+}
+
+.card-link {
+  color: #FBAB20;
+  text-decoration: underline;
 }
