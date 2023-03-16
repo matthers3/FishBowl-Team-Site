@@ -5,7 +5,7 @@ import "./AboutUs.scss";
 export default function AboutUs() {
 
     const aboutText = {
-      title: <strong className="extra-bold big">ABOUT US</strong>,
+      title: <strong className="extra-bold">ABOUT US</strong>,
       p11: <>Fishbowl Team is a passion project, founded by a group of friends, 
       looking to uplift and bring financial stability to other creative people in a 
       country that often belittles and minimizes artistic work and creative processes. 
@@ -67,7 +67,9 @@ export default function AboutUs() {
       return (
         <div className="about-us-mobile mobile">
             <div className="about-p-mobile">
-                {aboutText.title}
+                <div className="text-big">
+                    {aboutText.title}
+                </div>
                 <br/><br/>
                 <div className="about-us-text text">
                     {aboutText.p11}

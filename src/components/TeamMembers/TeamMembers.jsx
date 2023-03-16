@@ -76,7 +76,7 @@ export default function TeamMembers() {
             </div>
             <div className="about-text-container">
               <div className="about-text">
-                <div className="p1">
+                <div className="p1 text">
                 {meetTheTeam.p1}
                 </div>
               </div>
@@ -93,17 +93,14 @@ export default function TeamMembers() {
     } else {
       // Mobile.
       return (
-        <div className="team-members-mobile" id="about">
+        <div className="team-members-mobile mobile" id="about">
           <div className="team-title-mobile text-big">
             {meetTheTeam.title}
           </div>
           <div className="about-text-container">
             <div className="about-text-mobile">
-              <div className="p1">
+              <div className="p1 text">
               {meetTheTeam.p1}
-              </div>
-              <div className="p2">
-              {meetTheTeam.p2}
               </div>
             </div>
           </div>
