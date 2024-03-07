@@ -5,7 +5,7 @@ import "./ProjectAbout.scss";
 
 export default function ProjectAbout() {
 
-    const title = <strong>FISHBOWL CITY: ALMA</strong>;
+    const title = <strong>FISHBOWL CITY: RACEBOTS</strong>;
     const paragraph = <>
     A <strong className="cyber-blue">Story-driven</strong><br/>
             <strong className="pink">Racing Game</strong> about <br/>

@@ -5,7 +5,7 @@ import './Header.scss';
 
 const headersData = [
     { label: 'Home' },
-    { label: 'Alma'},
+    { label: 'FCR'},
     { label: 'About & Contact' },
     { label: 'Contact' },
 ];
@@ -35,10 +35,10 @@ export default function Header(props) {
   }
 
   const isSelected = (currentPath) => {
-    if (currentUrl.includes("/Alma") && currentPath === "Alma") {
+    if ((currentUrl.includes("/Alma") && currentPath === "Alma") || (currentUrl.includes("/FCR") && currentPath === "Alma")) {
       return "option-selected";
     }
-    else if (!currentUrl.includes("/Alma") && currentPath === "Home")
+    else if (!(currentUrl.includes("/Alma") || currentUrl.includes("/FCR")) && currentPath === "Home")
     {
       return "option-selected";
     }
@@ -58,7 +58,7 @@ export default function Header(props) {
             <div className={`option ${isSelected("Home")}`}>{headersData[0].label.toUpperCase()}</div>
           </a>
           <div><img alt="" src={getSeparator()} /></div>
-          <a href={`/Alma`}>
+          <a href={`/FCR`}>
             <div className={`option ${isSelected("Alma")}`}>{headersData[1].label.toUpperCase()}</div>
           </a>
         </div>
@@ -72,7 +72,7 @@ export default function Header(props) {
             <div className={`option ${isSelected("Home")}`}>{headersData[0].label.toUpperCase()}</div>
           </a>
           <div><img alt="" src={getSeparator()} /></div>
-          <a className={`mobile-option`} href={`/Alma`}>
+          <a className={`mobile-option`} href={`/FCR`}>
             <div className={`option ${isSelected("Alma")}`}>{headersData[1].label.toUpperCase()}</div>
           </a>
         </div>);

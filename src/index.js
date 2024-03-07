@@ -22,6 +22,10 @@ const router = createBrowserRouter([
     element: <AlmaProject />,
   },
   {
+    path: "FCR",
+    element: <AlmaProject />,
+  },
+  {
     path: "*",
     element: <MainSite />,
   },
