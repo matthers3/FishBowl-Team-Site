@@ -9,7 +9,7 @@ export default function AlmaBanner() {
       //Desktop.
       return (
         <div className="alma-banner" id="home">
-            <div className="bannerContainer" style={{backgroundImage: `url(./FC_Alma_Cover_Art_NOLOGO.png)`}}>
+            <div className="bannerContainer" style={{backgroundImage: `url(./FCR_banner.png)`}}>
                 <img className="imageSizer" alt="" src={"./AlmaBannerSizer.png"}></img>
             </div>
             {/* <img className="alma-title" alt="" src={"./Logo_WIP.png"} /> */}
@@ -20,8 +20,8 @@ export default function AlmaBanner() {
       return (
         // Mobile.
         <div className="mobile-alma-banner" id="home">
-            <div className="bannerContainer" style={{backgroundImage: `url(./FC_Alma_Cover_Art_NOLOGO.png)`}}>
-                <img className="imageSizer" alt="" src={"./AlmaBannerSizer.png"}></img>
+            <div className="bannerContainer" style={{backgroundImage: `url(./FCR_banner.png)`}}>
+                <img className="imageSizer" alt="" src={"./FCR_banner.png"}></img>
             </div>
             {/* <img className="alma-title" alt="" src={"./Logo_WIP.png"} /> */}
         </div>
