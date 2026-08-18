@@ -12,12 +12,6 @@ export default function TeamMembers() {
         img: 'pp_cat_n.png'
       },
       {
-        name: 'Matías Gabler',
-        role: 'Lead Programer, Assistant Producer',
-        card: `https://matiasgabler.carrd.co/`,
-        img: 'pp_mati_n.png'
-      },
-      {
         name: '"Pan" Pezoa',
         role: 'Designer, Artist, Assistant Programer',
         card: `https://panshios.carrd.co/`,
