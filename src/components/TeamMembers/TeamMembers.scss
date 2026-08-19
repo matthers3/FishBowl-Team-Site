@@ -28,7 +28,11 @@
     }
 
     .team-member-container {
-        height: 40vh;
+
+        @media (max-width: 767px) {
+            height: 40vh;
+        }
+   
         align-items: center;
         background-size: 100% 100% !important;
         display: flex;
