@@ -13,7 +13,7 @@ export default function TeamMembers() {
       },
       {
         name: '"Pan" Pezoa',
-        role: 'Designer, Artist, Assistant Programer',
+        role: 'Designer, Artist, Game Programmer',
         card: `https://panshios.carrd.co/`,
           img: 'pp_pan_n.png'
       },
