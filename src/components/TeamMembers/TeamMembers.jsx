@@ -81,7 +81,6 @@ export default function TeamMembers() {
               {createMember(0, 'right')}
               {createMember(1, 'right')}
               {createMember(2, 'left')}
-              {createMember(3, 'left')}
           </div>
         </div>
       );
