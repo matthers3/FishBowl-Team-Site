@@ -28,7 +28,7 @@ export default function TeamMembers() {
     const meetTheTeam = {
       title: 'MEET THE TEAM !',
       p1: <>Fishbowl Team is a small but passionate team based in Santiago, 
-      Chile. Founded by four besties trying to pursue their dream career. 
+      Chile. Founded by besties trying to pursue their dream career. 
       Bound together by a love for world-building, interactive storytelling, 
       beautiful visual experiences and an insatiable thirst for fun!</>
     }
